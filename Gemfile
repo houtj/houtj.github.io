@@ -13,3 +13,4 @@ end
 
 gem "wdm", "~> 0.2.0", :platforms => [:windows]
 gem 'jekyll-compose', group: [:jekyll_plugins]
+gem 'jekyll-scholar', group: [:jekyll_plugins]

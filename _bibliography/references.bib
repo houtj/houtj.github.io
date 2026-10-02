@@ -1,0 +1,158 @@
+@inproceedings{hou2026language,
+  title     = {Language-Guided Time-Series Event Detection with Zero-Shot Cross-Model Grounding},
+  author    = {Hou, Tianjun and Chang, Xiqing and Wan, Sky Chenwei},
+  booktitle = {Proceedings of EMNLP},
+  year      = {2026},
+  abbr      = {EMNLP},
+  keywords  = {timeseries}
+}
+
+@misc{wan2026grammarwaveexplainablemultivariate,
+      title={Grammar of the Wave: Towards Explainable Multivariate Time Series Event Detection via Neuro-Symbolic VLM Agents}, 
+      author={Sky Chenwei Wan and Yifei Y. Wang and Tianjun Hou and Xiqing Chang and Aymeric Jan},
+      year={2026},
+      eprint={2603.11479},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2603.11479}, 
+      keywords = {timeseries}
+}
+
+
+
+@article{eage:/content/papers/10.3997/2214-4609.202637171,
+   author = "Hou, T. and Liew, L.H. and Renaudeau, J. and Malvesin, E.",
+   title = "Topology-Aware Deep Learning for Implicit Structural Model Reconstruction", 
+   journal= "",
+   year = "2026",
+   volume = "2026",
+   number = "1",
+   pages = "1-13",
+   doi = "https://doi.org/10.3997/2214-4609.202637171",
+   url = "https://www.earthdoc.org/content/papers/10.3997/2214-4609.202637171",
+   publisher = "European Association of Geoscientists &amp; Engineers",
+   issn = "2214-4609",
+   keywords = "petroleum",
+  }
+
+
+@proceedings{10.2118/222866-MS,
+    author = {Sarili, M. and Hou, T. and Butler, M. and Kherroubi, J.},
+    title = {Automatic Formation Pressure Test Classification Through Machine Learning - The Solution for a Clean and Reliable Database},
+    volume = {ADIPEC},
+    series = {Abu Dhabi International Petroleum Exhibition and Conference},
+    pages = {D031S122R002},
+    year = {2024},
+    month = {11},
+    abstract = {Wireline formation test tools provide formation pressure throughout every phase of field development. It gives also fluid mobility, formation fluid type and connectivity. Classification of pressure tests and interpretation of data are crucial to using data effectively and efficiently. In certain cases, especially in low mobility reservoirs, the classification and interpretation depend on field/reservoir engineers’ expertise and experience. These interpretations are subjective, and thus need to be reviewed. In this paper, we proposed a machine learning workflow to classify all pressure data, including the difficult cases. The workflow was able to distinguish good quality formation pressure measurements from tight / invalid points for the vast majority of the dataset. It flagged pressure test which were ambiguous and needed further operator review.The proposed workflow includes a first step of pressure test index identification, a second step of pretests visualization and a third step of automatic classification. In the index identification phase, given a pressure test station job, the starting and ending time of pressure buildup is identified. In the visualization phase, the buildup pressure curves are represented in a 2-dimensional space. The closer they are in the 2-dimensional space, the shape of the buildup curves are more similar. An ambiguous zone is defined based on the visualization, where the mix of two or more classes appears. The pressure tests in the ambiguous zone are added to the quality check list. In the automatic classification phase, a machine learning algorithm based on K-Nearest Neighbour (KNN) and Light Grading Boosting Machine (LGBM) is applied to perform automatic classification. The pressure tests on which the algorithm make incorrect prediction are added to the quality check list. After the pressure tests in the quality check list are reviewed, the visualization phase and the automatic classification phase are repeated until the classification result reaches 100\% accuracy, or no new pressure test can be added to the check list.A case study was performed on an extensive formation pressure dataset from PDO a total of 379 pressure tests. The pressures were classified both in the traditional way by an analyst, as well as through the machine learning workflow. The vast majority of the dataset was classified correctly, and only 12 pressure tests were added to the quality check list for manual interpretation. The pressure test interpretation quality check time was reduced by 90\%.Once the pressure test interpretations are quality checked, future work includes designing a machine learning model to perform highly reliable pressure test quality classification and real-time pressure test quality identification. The realtime identification supports early decision making for reservoir engineers on whether they can get a stabilized pressure in reasonable operation time.},
+    doi = {10.2118/222866-MS},
+    url = {https://doi.org/10.2118/222866-MS},
+    eprint = {https://onepetro.org/SPEADIP/proceedings-pdf/24ADIP/24ADIP/D031S122R002/3838248/spe-222866-ms.pdf},
+    keywords = {petroleum},
+}
+
+
+
+@proceedings{10.30632/SPWLA-2024-0039,
+    author = {Loviken, Pontus and Blanco, Yon and Hou, Tianjun},
+    title = {An Automated Workflow to Optimize Parameters for Formation Pressure Measurements Utilizing Memoization},
+    volume = {SPWLA 65th Annual Logging Symposium},
+    series = {SPWLA Annual Logging Symposium},
+    pages = {D031S006R005},
+    year = {2024},
+    month = {05},
+    abstract = {Pore pressure measurements are essential over the life of an oil field, providing critical information from exploration through development. However, designing pressure tests with a formation tester (on either wireline or logging-while-drilling tools) might not be straightforward as it requires understanding several variables such as overbalance, permeability (both horizontal and vertical), viscosity, porosity, and compressibility. Modeling software exists to predict the behavior of a pressure response under multiple combinations of those variables. Typically, trial and error is used to adjust the best pressure test parameters, which are drawdown volume, drawdown rate, and buildup time. The goal is to optimize volume, rate, and time in such a way that a fully stabilized pressure measurement is obtained in the minimum time possible. In practice, this is difficult since each test must be evaluated over the many different variable combinations one expects to encounter. In this work, we develop a method to automate this process to suggest optimal pressure test parameters, given expected distributions of the key variables. This optimization includes a trade-off between the probability a given test would work for a random variable combination and the time each test takes, which is left to the user to decide. Additionally, the user can generate multiple pressure tests, where each is optimized to solve the scenarios the previous test failed to solve.In this work, we are treating each pressure measurement as two individual tests: an initial drawdown followed by a pressure stabilization time and a subsequent second drawdown and second stabilization time. As each drawdown is defined by a volume and a rate, each full test consists of six parameters. Given expected distributions over the key formation variables, expressed in terms of P10, P50, and P90 values, the goal is to instantly know in what proportion of all scenarios a given test configuration will work. This is done using memoization. A dataset of 1000 scenarios is generated prior to the testing using the given distributions. To each of these scenarios, the pressure responses of different drawdown volumes and rates are simulated and subsequently registered using modeling software. By using the fact that the result of the second test depends on the stabilization pressure of the first, it is possible to disentangle the second test from the first by always stopping the first test at a given pressure within a predefined range. This reduces the combinatorial complexity significantly as the two tests can be analyzed independently. During optimization, it is thus possible to instantly know, without further use of the modeling software, which scenarios will work for a given test configuration, allowing for rapid configuration search and providing the best solution for each total test time. The process can be repeated with unsolved scenarios to build a toolbox of different tests for the different scenarios.The proposed method is rapid and flexible at testing time and leaves much room for the user to influence the optimization process, focusing on certain parts of the variable space or optimizing with respect to what is unsolved by previous tests. The time-consuming step is the one-time cost of memoization, which for 1000 scenarios takes approximately 48 hours on a standard laptop for 100 volume-rate combos for each drawdown, giving 10,000 possible test configurations to search among. Once the memoization is done, pressure test parameters can be instantly evaluated over all scenarios, and optimization for all test parameter combos can be made in less than a minute. Preliminary analysis confirms that the tests suggested by the method work well in simulation and outperform both the standard tests as well as handcrafted tests by domain experts.},
+    doi = {10.30632/SPWLA-2024-0039},
+    url = {https://doi.org/10.30632/SPWLA-2024-0039},
+    eprint = {https://onepetro.org/SPWLAALS/proceedings-pdf/SPWLA24/SPWLA24/D031S006R005/3409110/spwla-2024-0039.pdf},
+    keywords = {petroleum},
+}
+
+
+
+@proceedings{10.2118/208779-MS,
+    author = {Zhang, Zheng and Hou, Tianjun and Kherroubi, Josselin and Khvostichenko, Daria},
+    title = {Event Detection in Drilling Remarks Using Natural Language Processing},
+    volume = {IADC/SPE International Drilling Conference and Exhibition},
+    series = {SPE/IADC Drilling Conference and Exhibition},
+    pages = {D022S007R002},
+    year = {2022},
+    month = {03},
+    abstract = {Remarks in daily drilling reports (DDR) and daily mud reports (DMR) are an invaluable source of information for the analysis of ongoing operations and planning of future wells. These remarks are entered as free text and thus represent unstructured information, which requires expert knowledge for interpretation. Here, we aim to develop a machine learning algorithm to automatically detect events of interest and convert this information into a structured format. Several unscheduled events, such as losses, influx and stuck pipe, were selected to develop a prototype of our natural language processing (NLP) approach for daily DMR remarks. Data selection, data annotation and analysis workflow, and results are discussed in the manuscript.},
+    doi = {10.2118/208779-MS},
+    url = {https://doi.org/10.2118/208779-MS},
+    eprint = {https://onepetro.org/SPEDC/proceedings-pdf/22DC/22DC/D022S007R002/3803907/spe-208779-ms.pdf},
+    keywords = {petroleum},
+}
+
+
+@article{HOU2019141,
+title = {Mining customer product reviews for product development: A summarization process},
+journal = {Expert Systems with Applications},
+volume = {132},
+pages = {141-150},
+year = {2019},
+issn = {0957-4174},
+doi = {https://doi.org/10.1016/j.eswa.2019.04.069},
+url = {https://www.sciencedirect.com/science/article/pii/S0957417419303057},
+author = {Tianjun Hou and Bernard Yannou and Yann Leroy and Emilie Poirson},
+keywords = {reviews, Knowledge acquisition, Online reviews, User requirement, Product design, Decision support},
+abstract = {This research set out to identify and structure the words and expressions related to customers’ likes and dislikes found in online reviews on order to guide product development. Previous methods have mainly focused on product features, yet reviewers express preferences on much more. Here we build on an extensive review of the design science literature to propose a summarization model containing multiple aspects of user preference, such as product affordances, emotions, and usage conditions. We also uncover the linguistic patterns describing these aspects of preference, and draft them into annotation guidelines. A case study demonstrates that our proposed model and annotation guidelines enable human annotators to structure the online reviews with high inter-agreement. As high inter-rater-agreement human annotation results are an essential step towards automating the online review summarization process with natural language processing, this study brings material for future automatization research.}
+}
+
+@article{10.1115/1.4042793,
+    author = {Hou, Tianjun and Yannou, Bernard and Leroy, Yann and Poirson, Emilie},
+    title = {Mining Changes in User Expectation Over Time From Online Reviews},
+    journal = {Journal of Mechanical Design},
+    volume = {141},
+    number = {9},
+    pages = {091102},
+    year = {2019},
+    month = {04},
+    abstract = {Customers post online reviews at any time. With the timestamp of online reviews, they can be regarded as a flow of information. With this characteristic, designers can capture the changes in customer feedback to help set up product improvement strategies. Here, we propose an approach for capturing changes in user expectation on product affordances based on the online reviews for two generations of products. First, the approach uses a rule-based natural language processing method to automatically identify and structure product affordances from review text. Then, inspired by the Kano model which classifies preferences of product attributes in five categories, conjoint analysis is used to quantitatively categorize the structured affordances. Finally, changes in user expectation can be found by applying the conjoint analysis on the online reviews posted for two successive generations of products. A case study based on the online reviews of Kindle e-readers downloaded from amazon.com shows that designers can use our proposed approach to evaluate their product improvement strategies for previous products and develop new product improvement strategies for future products.},
+    issn = {1050-0472},
+    doi = {10.1115/1.4042793},
+    url = {https://doi.org/10.1115/1.4042793},
+    eprint = {https://asmedigitalcollection.asme.org/mechanicaldesign/article-pdf/141/9/091102/6401984/md_141_9_091102.pdf},
+    keywords = {reviews},
+}
+
+@inproceedings{hou:hal-01673545,
+  TITLE = {{Identifying affordances from online product reviews}},
+  AUTHOR = {Hou, Tianjun and Yannou, Bernard and Leroy, Yann and Poirson, Emilie and Mata, Ivan and Fadel, Georges},
+  URL = {https://hal.science/hal-01673545},
+  BOOKTITLE = {{International Conference on Engineering Design (ICED)}},
+  ADDRESS = {Vancouver, Canada},
+  YEAR = {2017},
+  MONTH = Aug,
+  PDF = {https://hal.science/hal-01673545v1/file/ICED%202017%20-%20Hou%20et%20al.pdf},
+  HAL_ID = {hal-01673545},
+  HAL_VERSION = {v1},
+  keywords = {reviews},
+}
+
+
+@article{4b8b093484ea4c968fa99b218977b445,
+title = "Mission-oriented flying qualities criteria for high angle of attack aircraft",
+abstract = "The flying qualities evaluation of high angle of modern attack aircraft lacks of quantitative evaluation criteria. Based on the conventional flying qualities criteria, with mission-oriented flying qualities evaluation method, various flying by wire systems with different transfer function parameters were tested, by subjective evaluation method and objective evaluation method. Thus, quantitative longitudinal and lateral flying qualities criteria for high angle of attack aircraft were developed. The result of comparison between the conventional flying qualities evaluation criteria and the quantitative evaluation criteria for high angle of attack aircraft shows that with higher short period damping ratio and control anticipate parameter in longitudinal and higher roll mode time constant in lateral, the flying qualities for high angle of attack aircraft get better. Therefore, the developed criteria is more adaptable in evaluation the flying qualities for the high angle of attack aircraft. This new criteria could be used as a guideline when designing modern air fighters.",
+keywords = "Air fighter, Criteria for evaluation, Flying qualities, High angle of attack, Mission-oriented",
+author = "Tianjun Hou and Youguang Guo and Lixin Wang",
+note = "Publisher Copyright: {\textcopyright}, 2015, Beijing University of Aeronautics and Astronautics (BUAA). All right reserved.",
+year = "2015",
+month = sep,
+doi = "10.13700/j.bh.1001-5965.2014.0682",
+language = "英语",
+volume = "41",
+pages = "1736--1741",
+journal = "Beijing Hangkong Hangtian Daxue Xuebao/Journal of Beijing University of Aeronautics and Astronautics",
+issn = "1001-5965",
+publisher = "Beijing University of Aeronautics and Astronautics (BUAA)",
+number = "9",
+keywords = {reviews},
+}
+
+
+@article{Hou_Yannou_Leroy_Poirson_2019, title={An Affordance-Based Online Review Analysis Framework}, volume={1}, DOI={10.1017/dsi.2019.252}, number={1}, journal={Proceedings of the Design Society: International Conference on Engineering Design}, author={Hou, Tianjun and Yannou, Bernard and Leroy, Yann and Poirson, Emilie}, year={2019}, pages={2457–2466}, keywords={reviews}} 
+
+
+

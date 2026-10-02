@@ -236,3 +236,18 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# jekyll-scholar settings › https://github.com/inukshuk/jekyll-scholar
+scholar:
+  style: apa
+  locale: en
+
+  source: ./_bibliography
+  bibliography: "*.bib"
+
+  bibliography_template: "bib"
+
+  replace_strings: true
+  join_strings: true
+
+  query: "@*"
