@@ -18,17 +18,30 @@ This is why my research centers on **language-guided time series analysis**, com
 ---
 
 ## Agentic time series analysis
+<video controls muted loop playsinline style="float: right; width: 45%; max-width: 480px; margin: 0 0 1rem 1.5rem;">
+  <source src="{{ '/assets/video/2026-09-02-23-41-28.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 We work on agentic systems for time series analysis, with the goal of adapting time series analysis to domain-specific context.
 
-Our flagship contribution is an event logic tree built on Allen's interval algebra, which mitigates hallucination and enables reliable agent orchestration for time series pattern discovery.
+Our flagship contribution is an **event logic tree** built on Allen's interval algebra, which mitigates hallucination and enables reliable agent orchestration for time series pattern discovery.
+
+<div style="clear: both;"></div>
 
 ---
 
 ## Language-guided time series event detection
+<video controls muted loop playsinline style="float: right; width: 45%; max-width: 480px; margin: 0 0 1rem 1.5rem;">
+  <source src="{{ '/assets/video/2026-08-27-01-09-14.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 We train models to align natural-language descriptions with time series data, making temporal patterns recognizable and searchable through language.
 
-Our flagship contribution is GroundingMoment, which enables fast, domain-agnostic langauge-guided event detection from time series.
+Our flagship contribution is **GroundingMoment**, which enables fast, domain-agnostic langauge-guided event detection from time series.
+
+<div style="clear: both;"></div>
 
 ---
 
@@ -37,8 +50,16 @@ We explore how language models can reason directly over time series, treating te
 
 For industrial applications, this reasoning must also be fast enough for real-time analysis. We therefore focus on compact models that retain strong reasoning capabilities while meeting the latency and efficiency requirements of operational time series workflows.
 
-Research directions includes time series language model (TSLM) and time series-langauge-action model (TSLA).
+Research directions includes **time series language model (TSLM)** and **time series-langauge-action model (TSLA)**.
 
 ---
 
 ## Time-series data annotation
+<video controls muted loop playsinline style="float: right; width: 45%; max-width: 480px; margin: 0 0 1rem 1.5rem;">
+  <source src="{{ '/assets/video/2026-10-02-17-04-01.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+We build **web-based software** for time series data visualization and labeling, because accurate annotations are essential for training ML models.
+
+<div style="clear: both;"></div>
