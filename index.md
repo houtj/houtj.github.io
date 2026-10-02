@@ -4,7 +4,7 @@ title: About Me
 ---
 
 <figure style="float: right; width: min(40%, 300px); margin: 0 0 1.25rem 1.5rem;">
-  <img src="{{ '/assets/img/profile-photo.jpeg' | relative_url }}" alt="Portrait of Tianjun HOU" style="width: 100%; border-radius: 0.75rem;">
+  <img src="/assets/img/profile-photo.jpeg" alt="Portrait of Tianjun HOU" style="width: 100%; border-radius: 0.75rem;">
 </figure>
 
 I am **Tianjun HOU**, AI engineer and researcher at SLB AI Lab. I currently lead two major projects within the team:
